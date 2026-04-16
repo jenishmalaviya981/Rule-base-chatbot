@@ -1,4 +1,7 @@
 import time
+
+print("Simple Chatbot (type 'exit' to stop)")
+
 while True:
     user = input("You: ").lower()
 
@@ -7,13 +10,9 @@ while True:
         time.sleep(2)
         print("Bot: Hi!")
     elif "how are you" in user:
-        print("bot are typing...")
-        time.sleep(2)
         print("Bot: I'm fine!")
-    elif "bye" in user:
-        print("bot are typing...")
-        time.sleep(2)
-        print("Bot: Goodbye!")
+    elif "exit" == user:
+        print("bot : good bye")
         break
     else:
         print("Bot: I don't understand")
